@@ -38,7 +38,7 @@ class PurchaseController extends GetxController {
 
         Razorpay razorpay = Razorpay();
         var options = {
-          'key': 'rzp_test_3eyOBmr2eNUOYZ',
+          'key': // Your razorPay api key,
           'amount': price * 100,
           'name': item,
           'description': description,
