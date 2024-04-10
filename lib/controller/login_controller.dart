@@ -78,7 +78,7 @@ class LoginController extends GetxController{
       final random = Random();
       int otp = 1000 + random.nextInt(9000);
       String mobileNumber = registerMobileCtrl.text;
-      String url = 'https://www.fast2sms.com/dev/bulkV2?authorization=pCBgxL43zFqSNoelKVmOPhd52ZTYu0yi6kUvXHQcGfanIjDRMAvORbz9apQnTyH2uAXBeq6SfrGmJg0w&route=otp&variables_values=$otp&flash=0&numbers=$mobileNumber';
+      String url = // Your Fast2SMS SMS sending link ;
       Response response = await GetConnect().get(url);
       print(otp);
       if(response.body['message'][0] == 'SMS sent successfully.'){
